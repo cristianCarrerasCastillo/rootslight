@@ -1,0 +1,18 @@
+{% extends "core/base.html" %}
+{% block title %} Control de Luces {% endblock %}
+
+{% block content %}
+    <div class="cuerpo">
+        <div class="titulo">
+            <h1>Light control</h1>
+        </div>
+        <div class="contenido">
+            <div class="btn center">
+                <br>
+                <br>
+                <button class="btn-on" onclick="on()">ON</button>
+                <button class="btn-off" onclick="off()">OFF</button>
+            </div>
+        </div>
+    </div>
+{% endblock %}
