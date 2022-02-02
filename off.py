@@ -6,6 +6,7 @@ mensaje = str(now)
 log = open('/home/pi/Pictures/timelapse/log.log','a')
 
 #Definimos el modo BCM
+GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 #Ahora definimos el pin GPIO 17 como salida
 GPIO.setup(4, GPIO.OUT,initial=GPIO.LOW)
